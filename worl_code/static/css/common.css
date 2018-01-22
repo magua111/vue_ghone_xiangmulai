@@ -1,0 +1,223 @@
+//样式重置
+@charset "utf-8";
+html {
+color:#000;
+background:#fff;
+-webkit-text-size-adjust:100%;
+-ms-text-size-adjust:100%
+}
+html * {
+outline:0;
+-webkit-text-size-adjust:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+html,body,#app {
+font-family:sans-serif;
+width: 100%;
+height: 100%;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+input,select,textarea {
+font-size:100%
+}
+table {
+border-collapse:collapse;
+border-spacing:0
+}
+fieldset,img {
+border:0
+}
+abbr,acronym {
+border:0;
+font-variant:normal
+}
+del {
+text-decoration:line-through
+}
+address,caption,cite,code,dfn,em,th,var {
+font-style:normal;
+font-weight:500
+}
+ol,ul {
+list-style:none
+}
+caption,th {
+text-align:left
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:500
+}
+q:before,q:after {
+content:''
+}
+sub,sup {
+font-size:75%;
+line-height:0;
+position:relative;
+vertical-align:baseline
+}
+sup {
+top:-.5em
+}
+sub {
+bottom:-.25em
+}
+a:hover {
+text-decoration:underline
+}
+ins,a {
+text-decoration:none
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+
+h1{
+  font-size: .36rem;
+}
+h2{
+  font-size: .32rem
+}
+h3{
+  font-size: .28rem;
+}
+p{
+  font-size: .24rem;
+}
+h4{
+  font-size: .2rem;
+}
+
+/*页面标准化*/
+/*底部弹窗*/
+.mint-popup-bottom{
+  width: 100%;
+  height: 273px;
+}
+.picker-backdrop{
+  position: static!important;
+}
+.picker-wrapper{
+  position: absolute!important;
+}
+.picker-content{
+  height: 2.28rem;
+}
+.picker-helper:before{
+  border-top: 1px solid rgb(204,204,204)!important;
+  border-bottom: 1px solid rgb(204,204,204)!important;
+}
+.mint-popup-bottom .pop-top{
+  height: 45px;
+  padding: 0 .36rem;
+  display: flex;
+  align-items: center;
+  background: rgba(244,244,244,1);
+  justify-content: space-between;
+  /*border-bottom: 1px solid rgb(213,213,213);*/
+}
+
+.picker-item{
+	color: #ccc!important;
+	font-size: 0.36rem!important;
+  -webkit-transition-duration: .2s!important;
+          transition-duration: .2s!important;    
+}
+.mint-popup-bottom .pop-top > p{
+  font-size: .36rem;
+  color: #000;
+}
+.picker-items .picker-selected{
+	color: #000!important;
+	font-size: 0.4rem!important;
+}
+.mint-msgbox{
+	border-radius: 0.2rem!important;
+  width: 5.4rem!important;
+  overflow: auto!important;
+}
+/*messageBox*/
+/*.mint-msgbox-header{
+  padding: 0 .54rem!important;
+}*/
+.mint-msgbox-title{
+	padding: 0 .32rem!important;
+	font-size: .34rem!important;
+	text-align: center!important;
+	margin-left: 0.3rem!important;
+}
+.mint-msgbox-content{
+  padding: 0 .32rem!important;
+  border-bottom: 1px solid rgb(204,204,204)!important;
+}
+.mint-msgbox-message{
+  text-align: center!important;
+  margin: .48rem 0 .42rem .16rem!important;
+  font-size: .36rem!important;
+  color: rgb(67,67,67)!important;
+  line-height: 100%!important;
+}
+.mint-msgbox-input{
+  padding-top: 0!important;
+}
+.mint-msgbox-input>input{
+  height: .72rem!important;
+  background: rgb(244,244,244)!important;
+  border: none!important;
+  padding-left: .28rem!important;
+  color: rgb(153,153,153);
+  margin-bottom: .48rem;
+}
+.mint-msgbox-errormsg{
+  display: none!important;
+}
+.mint-msgbox-btns{
+  height: .72rem!important;
+  line-height: .72rem!important;
+  margin: .14rem 0;
+}
+.mint-msgbox-btn{
+  font-size: .32rem;
+  color: rgb(153,153,153);
+}
+.mint-msgbox-cancel{
+	color: rgb(52,110,215)!important;
+}
+.mint-msgbox-confirm{
+  color: rgb(52,110,215)!important;
+}
+/*actionsheet*/
+.mint-actionsheet{
+  background: transparent!important;
+}
+.mint-actionsheet>.mint-actionsheet-list{
+  border-radius: .25rem;
+  margin: 0 .2rem;
+  background-color: #fff;
+  margin-bottom: .2rem!important;
+}
+.mint-actionsheet>.mint-actionsheet-list>li{
+  background-color: transparent!important;
+  font-size: .36rem!important;
+  color: rgb(96,173,251);
+  border-bottom: 1px solid rgb(213,213,213);
+  height: 1.14rem;
+  line-height: 1.14rem;
+}
+.mint-actionsheet>.mint-actionsheet-list>li:last-child{
+  border: none;
+}
+.mint-actionsheet-button{
+  width: auto!important;
+  margin: 0 .2rem;
+  border-radius: .25rem;
+  height: 1.14rem;
+  color: rgb(96,173,251)!important;
+  font-size: .36rem!important;
+  margin-bottom: .2rem;
+}
